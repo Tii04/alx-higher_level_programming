@@ -3,6 +3,6 @@
 def islower(s):
     inspect = ord(s)
     if inspect >= 97 and inspect <= 122:
-        return("True")
+        return True
     else:
-        return("False")
+        return False
