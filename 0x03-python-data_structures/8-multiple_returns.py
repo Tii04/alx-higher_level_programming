@@ -2,7 +2,8 @@
 
 
 def multiple_returns(sentence):
-    if sentence is False:
+    leng = len(sentence)
+    if leng <= 0:
         return None
     leng = len(sentence)
     first = sentence[0]
