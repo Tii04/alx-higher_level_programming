@@ -4,4 +4,4 @@ def raise_exception_msg(message=""):
     try:
         raise ner
     except NameError as ner:
-        print (message)
+        print(message)
