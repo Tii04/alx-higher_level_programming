@@ -25,7 +25,7 @@ class Square():
         """Setter method. value should be of type int."""
 
         if not isinstance(value, int):
-            raise TypeError("size must be integer")
+            raise TypeError("size must be an integer")
 
         if value < 0:
             raise valueError("size must >= 0")
