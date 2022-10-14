@@ -14,9 +14,6 @@ class Square():
             raise ValueError("size must be >= 0")
         self.__size = size
 
-    def area(self):
-        return (self.__size * self.__size)
-
     @property
     def size(self):
         """Getter method"""
@@ -34,4 +31,6 @@ class Square():
             raise valueError("size must >= 0")
 
         self.__size = value
-        return value
+
+    def area(self):
+        return (self.__size * self.__size)
