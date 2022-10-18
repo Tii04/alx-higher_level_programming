@@ -17,6 +17,22 @@ class Rectangle:
         self.width = width
         self.height = height
 
+    def __str__(self):
+        """
+        prints a rectangle with "#" symbol using
+        width and height.
+        """
+        rect = []
+        if self.__width == 0 or self.__height == 0:
+            return ("")
+
+        for h in range(0, self.__height):
+            for w in range(0, self.__width):
+                rect.append("#")
+            if h != self.height - 1:
+                rect.append("\n")
+        return ("".join(rect))
+
     @property
     def width(self):
         """Gette method of width."""
