@@ -1,0 +1,21 @@
+======================
+Testing 1-rectangle.py
+======================
+
+I will be testing the class in the file until desired output is returned.
+Inside 1-rectangle.py I have created a class (Rectangle) that represents a rectangle.
+
+=================
+Let's get started
+=================
+
+::
+
+	>>> rectangle = __import__('1-rectangle').Rectangle
+	>>> rectangle(2, 4)
+	{'_Rectangle__height': 4, '_Rectangle__width': 2}
+
+::
+
+	>>> rectangle(10, 3)
+	{'_Rectangle__height': 3, '_Rectangle__width': 10}
