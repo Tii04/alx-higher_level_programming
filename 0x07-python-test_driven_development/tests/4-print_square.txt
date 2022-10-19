@@ -1,0 +1,53 @@
+===========================
+4-print_square.py explained
+===========================
+
+I will explain how to use function 'print_square(size)'.
+
+========================
+How to use the function?
+========================
+
+This function will create a square of the size specified by the number entered for the paramete size.
+Parameter size specifies the size of the square. Size is of type int, otherwise TypeError is raised.
+Size cannot be lower than zero, otherwise ValueError raised.
+
+::
+
+	>>> print_square = __import__('4-print_square').print_square
+	>>> print_square(4)
+	####
+	####
+	####
+ 	####
+
+::
+
+	>>> print_square(10)
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+	##########
+ 	##########
+	##########
+	##########
+
+
+::
+
+	>>> print_square(0)
+
+
+::
+
+	>>> print_square(1)
+	#
+
+::
+
+	>>> print_square(-1)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
