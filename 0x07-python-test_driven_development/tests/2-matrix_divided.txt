@@ -1,0 +1,64 @@
+=============================
+2-matrix_divided.py explained
+=============================
+
+I will explain how to use the function "matrix_divided(matrix, div)".
+
+
+========================
+How to use the function?
+========================
+
+This function divides a matrix, by the "div".
+The matrix needs to be a list of lists of integers or floats. Otherwise, TyperError raised.
+Each row of matrix must be same size, otherwise TyperError raised.
+Div needs to be a number (int or float) greater than zero, otherwise, TypeError raised or 
+ZeroDivisionError raised if div is zero.
+
+A new matrix is then returned with the divided results all rounded to two decimal places.
+
+::
+
+	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+	>>> matrix = [
+	...    	[1, 2, 3],
+	...	[4, 5, 6]
+	...    	]
+	>>> matrix_divided(matrix, 3)
+	[[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+
+::
+
+	>>> matrix = [
+	...	[3, 6, 9],
+	...	[12, 15, 18]
+	...	]
+	>>> matrix_divided(matrix, 3)
+	[[1.0, 2.0, 3.0], [4.0, 5.0, 6.0]]
+
+::
+
+	>>> matrix = [
+	...	[24, 21, 27],
+	...	[36, 39, 30]
+	...	]
+	>>> matrix_divided(matrix, 3)
+	[[8.0, 7.0, 9.0], [12.0, 13.0, 10.0]]
+
+::
+
+	>>> matrix = [
+        ...     [16, 11, 25],
+        ...     [60, 40, 33]
+        ...     ]
+        >>> matrix_divided(matrix, 3)
+        [[5.33, 3.67, 8.33], [20.0, 13.33, 11.0]]
+
+::
+
+	>>> matrix = [
+        ...     [19, 25, 27],
+        ...     [54, 90, 30]
+        ...     ]
+        >>> matrix_divided(matrix, 2)
+        [[9.5, 12.5, 13.5], [27.0, 45.0, 15.0]]
