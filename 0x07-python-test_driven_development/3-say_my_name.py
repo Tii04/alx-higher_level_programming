@@ -2,9 +2,10 @@
 
 """ A function that prints last and first name."""
 
+
 def say_my_name(first_name, last_name=""):
     """
-    Arguments: 
+    Arguments:
     first_name of type str.
     last_name of type str.
 
