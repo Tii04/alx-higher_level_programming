@@ -1,0 +1,42 @@
+==========================
+3-say_my_name.py explained
+==========================
+
+I will give instruction on how to use function 'say_my_name(first_name, last_name="")'.
+
+
+========================
+How to use the function?
+========================
+
+
+This function prints the first and last name entered.
+There are two parameters which are of type str.
+If a value that is not of type str is entered, TypeError is raised.
+
+::
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+	>>> say_my_name("John", "Smith")
+	My name is John Smith
+
+::
+
+	>>> say_my_name("Sahar", "Sidkarta")
+	My name is Sahar Sidkarta
+
+::
+
+	>>> say_my_name("Sahar", "Sidkarta")
+        My name is Sahar Sidkarta
+
+::
+
+	>>> say_my_name("Timmy")
+        My name is Timmy 
+
+::
+
+	>>> say_my_name(20, "Stace")
+        Traceback (most recent call last):
+	TypeError: first_name must be a string
