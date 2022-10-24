@@ -7,4 +7,4 @@ methods of the class
 
 
 def lookup(obj):
-    return dir(obj)
+    return list(dir(obj))
