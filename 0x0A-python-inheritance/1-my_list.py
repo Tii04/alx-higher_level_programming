@@ -6,7 +6,8 @@ Class MyList is subclass of class list
 
 
 class MyList(list):
-    pass
+    """ This class represents MyList
+    """
 
     def print_sorted(self):
         """
