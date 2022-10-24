@@ -1,0 +1,66 @@
+======================
+1-my_list.py explained
+======================
+
+I will give instruction on how the function '1-my_list.py' should be used.
+
+
+=====================
+How to use function ?
+=====================
+
+This function sorts a list in ascending order.
+
+
+Docstring check for module:
+---------------------------
+
+::
+
+	>>> mod = __import__('1-my_list').__doc__
+	>>> len(mod) > 1
+	True
+
+::
+
+Docstring check for class function:
+-----------------------------------
+
+::
+
+	>>> func = __import__('1-my_list').MyList.print_sorted.__doc__
+	>>> len(func) > 1
+	True
+
+::
+
+	>>> MyList = __import__('1-my_list').MyList
+	>>> my_list = MyList()
+
+::
+
+	>>> my_list.append(1)
+
+::
+	>>> my_list.append(4)
+
+::
+	>>> my_list.append(2)
+
+::
+	>>> my_list.append(3)
+
+::
+	>>> my_list.append(5)
+
+::
+	>>> print(my_list)
+	[1, 4, 2, 3, 5]
+
+::
+	>>> my_list.print_sorted()
+	[1, 2, 3, 4, 5]
+
+::
+	>>> print(my_list)
+	[1, 4, 2, 3, 5]
