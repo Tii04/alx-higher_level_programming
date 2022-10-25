@@ -1,0 +1,54 @@
+============================
+7-base_geometry.py explained
+============================
+
+I will give instruction on how 'area()' should work.
+
+====================
+How to use Function?
+====================
+
+This function has two parameters. name and value. value has to be int or a typeerror is raised.
+name has to be a string greater than 0, otherwise valueerror is raised.
+
+
+Testing module docstring:
+-------------------------
+
+::
+
+	>>> mod = __import__('7-base_geometry').__doc__
+	>>> len(mod) > 1
+	True
+
+::
+
+Testing class function docstrings:
+----------------------------------
+
+::
+
+	>>> func = __import__('7-base_geometry').BaseGeometry.integer_validator.__doc__
+	>>> len(func) > 1
+	True
+
+::
+
+	>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+	>>> bg = BaseGeometry()
+
+::
+
+	>>> try:
+    	...	bg.integer_validator("name", "John")
+	... except Exception as e:
+    	...    	print("[{}] {}".format(e.__class__.__name__, e))
+	[TypeError] name must be an integer
+
+::
+
+	>>> try:
+    	...    	bg.integer_validator("distance", -4)
+	... except Exception as e:
+     	...    	print("[{}] {}".format(e.__class__.__name__, e))
+	[ValueError] distance must be greater than 0
