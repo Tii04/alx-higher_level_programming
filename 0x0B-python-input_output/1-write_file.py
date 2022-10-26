@@ -1,4 +1,4 @@
-#!/usr/python3
+#!/usr/bin/python3
 
 """
 Function writes to a file
