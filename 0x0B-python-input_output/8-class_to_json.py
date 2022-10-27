@@ -4,8 +4,6 @@ Function that returns dictionary description for
 JSON objects.
 """
 
-import json
-
 
 def class_to_json(obj):
     """
