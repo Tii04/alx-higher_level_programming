@@ -92,7 +92,8 @@ class Rectangle(Base):
     def __str__(self):
         """ Format specification"""
 
-        return("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height))
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x,
+                self.y, self.width, self.height))
 
     @staticmethod
     def valid_attr(attr, value):
