@@ -59,6 +59,26 @@ class Base():
         return (r2)
 
     @classmethod
+    def load_from_file(cls):
+        """returns a list of instances"""
+
+        file_name = cls.__name__ + ".json"
+
+        try:
+            with open(file_name, encoding="utf8") as file:
+                buf = cls.from_json_string(file.read())
+        except:
+            return []
+
+        instances = []
+
+        for instance in buf:
+            temp = cls.create(**instance)
+            instances.append(temp)
+        return instances
+
+
+    @classmethod
     def save_to_file(cls, list_objs):
         """ JSON representation to a file"""
 
