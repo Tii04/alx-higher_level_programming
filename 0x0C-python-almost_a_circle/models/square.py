@@ -26,6 +26,24 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
+    def update(self, *args, **kwargs):
+        """ Assigns attributes"""
+
+        if len(args):
+            for count, ele in enumerate(args):
+                if count == 0:
+                    self.id = ele
+                elif count == 1:
+                    self.size = ele
+                elif count == 2:
+                    self.x = ele
+                elif count == 3:
+                    self.y = ele
+        else:
+            for key, val in kwargs.items():
+                if hasattr(self, key) is True:
+                    setattr(self, key, val)
+
     def __str__(self):
         """ Format specification"""
 
