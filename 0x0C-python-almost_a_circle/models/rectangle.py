@@ -122,3 +122,14 @@ class Rectangle(Base):
                 raise ValueError("{} must be >= 0".format(attr))
         elif value <= 0:
             raise ValueError("{} must be > 0".format(attr))
+
+    def to_dictionary(self):
+        """ Converts to dictionary representation"""
+
+        return {
+            "id": getattr(self, "id"),
+            "width": getattr(self, "width"),
+            "height": getattr(self, "height"),
+            "x": getattr(self, "x"),
+            "y": getattr(self, "y")
+        }
