@@ -84,9 +84,9 @@ class Rectangle(Base):
         display triangle with '#'"""
 
         rect = ""
-
+        print('\n' * self.y, end="")
         for h in range(self.height):
-            rect += ('#' * self.width) + '\n'
+            rect += (' ' * self.x) + ('#' * self.width) + '\n'
         print(rect, end="")
 
     def __str__(self):
