@@ -77,7 +77,6 @@ class Base():
             instances.append(temp)
         return instances
 
-
     @classmethod
     def save_to_file(cls, list_objs):
         """ JSON representation to a file"""
