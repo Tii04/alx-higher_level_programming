@@ -44,6 +44,16 @@ class Square(Rectangle):
                 if hasattr(self, key) is True:
                     setattr(self, key, val)
 
+    def to_dictionary(self):
+        """ Dictionary representation"""
+
+        return {
+            "id": self.id,
+            "size": self.size,
+            "x": self.x,
+            "y": self.y
+        }
+
     def __str__(self):
         """ Format specification"""
 
