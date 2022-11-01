@@ -35,4 +35,4 @@ class test_rectangle(unittest.TestCase):
 
             self.assertEqual(r1, 6)
             self.assertEqual(r2, 20)
-            self.assertEqual(r3, 56)
+            self.assertEqual(r3, 56)              
