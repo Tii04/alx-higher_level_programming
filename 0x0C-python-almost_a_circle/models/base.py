@@ -67,7 +67,7 @@ class Base():
         try:
             with open(file_name, encoding="utf8") as file:
                 buf = cls.from_json_string(file.read())
-        except:
+        except FileNotFoundError:
             return []
 
         instances = []
